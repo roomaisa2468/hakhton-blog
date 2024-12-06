@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thoughts, Ideas, and Stories</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+
+        nav .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        nav .search-bar input {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        nav .search-bar button {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .sidebar {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .blog-topics {
+            list-style: none;
+            padding: 0;
+        }
+
+        .blog-topics li {
+            margin-bottom: 10px;
+        }
+
+        .trending-topics {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .trending-topics a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .post {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0 , 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .post h2 {
+            margin-top: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+   
+    <nav>
+        <div class="container">
+            
+            <div class="search-bar">
+                <input type="text" id="searchQuery" placeholder="Search posts..." onkeyup="searchPosts()">
+                <button onclick="searchPosts()">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <h1>Thoughts, Ideas, and Stories</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Blog Topics</h2>
+            <ul class="blog-topics">
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Lifestyle</a></li>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Food</a></li>
+            </ul>
+        </div>
+        <div class="trending-topics">
+            <a href="#">Trending Topic 1</a>
+            <a href="#">Trending Topic 2</a>
+            <a href="#">Trending Topic 3</a>
+        </div>
+        <div class="post" id="post1">
+            <h2>Post Title 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="post" id="post2">
+            <h2>Post Title 2</h2>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+       
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Thoughts, Ideas, and Stories. All rights reserved.</p>
+        <button id="login-btn" onclick="window.location.href = 'index.html';">Login / Sign up</button>
+    </footer>
+
+    <script>
+        
+    </script>
+</body>
+</html>
+ 
+
